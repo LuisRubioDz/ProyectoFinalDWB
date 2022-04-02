@@ -8,48 +8,27 @@
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
             <p class="texto-normal">
-                Un elemento HTML casi siempre va a estar definido por un tag de inicio, contenido y un tag de cierre.
+                Los encabezados de HTML son títulos o subtítulos que podemos usar para desplegar texto en una página Web.
+                Y se definen con las etiquetas: 
+                <span class="spes_tagname"><span class="spes_tag">&lt;<span class="spes_tagname">h1</span>&gt;</span></span>,
+                <span class="spes_tagname"><span class="spes_tag">&lt;<span class="spes_tagname">h2</span>&gt;</span></span>,
+                <span class="spes_tagname"><span class="spes_tag">&lt;<span class="spes_tagname">h3</span>&gt;</span></span>,
+                <span class="spes_tagname"><span class="spes_tag">&lt;<span class="spes_tagname">h4</span>&gt;</span></span>,
+                <span class="spes_tagname"><span class="spes_tag">&lt;<span class="spes_tagname">h5</span>&gt;</span></span>,
+                <span class="spes_tagname"><span class="spes_tag">&lt;<span class="spes_tagname">h6</span>&gt;</span></span>. 
+                Donde h1 es el encabezado en el que pondremos lo más importante, y h6 el encabezado con lo menos importante.
             </p>
-            <div>
-                <span class="spes_tagname"><span class="spes_tag">&lt;</span>TagHtml<span class="spes_tag">&gt;</span></span>Contenido del elemento<span class="spes_tagname"><span class="spes_tag">&lt;</span>/TagHtml<span class="spes_tag">&gt;</span></span>
-            </div>
-
-            <br>
-            <p class="texto-normal">
-                Algunos ejemplos de elementos HTML se muestran a continuación:
-            </p>
-
-            <div>
-                <span class="spes_tagname"><span class="spes_tag">&lt;<span class="spes_tagname">h1</span>&gt;</span></span>
-                   Ejemplo de encabezado<span class="spes_tagname"><span class="spes_tag">&lt;</span>/h1<span class="spes_tag">&gt;</span>
-                </span>
-            </div>
-
-            <div >
-                <span class="spes_tagname"><span class="spes_tag">&lt;</span>p<span class="spes_tag">&gt;</span></span>
-                     Ejemplo de párrafo.<span class="spes_tagname"><span class="spes_tag">&lt;</span>/p<span class="spes_tag">&gt;</span>
-                </span>
-            </div>
-
-            <br>
-            <h2 class="head-normal">
-                Nunca omitir el tag de cierre de los elementos HTML:
-            </h2>
-            <p class="texto-normal">
-                En algunas ocasiones algunos elementos HTML se desplegaran de forma correcta aun y cuando se omita el tag de cierre de dicho
-                elemento, sin embargo no se debe de confiar en que esto siempre sucederá de esta forma, ya que pueden presentarse resultados y
-                errores innesperados cuando se olvida colocar el tag de cierre.
-            </p>
-
-            <h2 class="head-normal">
-                Los elementos HTML no son case sensitive.
-            </h2>
+            <P>
+                Los motores de búsqueda utilizan los encabezados para indexar la estructura y el contenido de las páginas web, por
+                lo que es importante usar elementos h1 para los encabezados principales, elementos h2 para poner encabezados menos
+                importantes, h3 y así sucesivamente.
+            </P>
+            <hr>
             <p>
-                Esto quiere decir que NO existe diferencia alguna entre letras mayúsculas y minúscular por lo tanto:
+                Nota Importante: Los elementos de encabezado de HTML deben de usarse sólo para poner encabezados, es decir no se deben 
+                usar estos elementos si lo que desea es hacer el texto más grande o ponerlo en negritas.
             </p>
-            <p class="texto-normal">
-                El: <code class="w3-codespan">&lt;P&gt;</code> significa exactamente lo mismo que <code class="w3-codespan">&lt;p&gt;</code>.
-            </p>
+            <hr>
         </div>
       </div>
     </div>
@@ -57,25 +36,47 @@
     <div class="accordion-item">
       <h3 class="accordion-header" id="flush-headingThree">
         <button class="accordion-button-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Elementos HTML vacíos
+          Ejemplos de Encabezados
         </button>
       </h3>
       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
-            <div>
-                <p class="texto-normal">
-                    Hay elementos HTML que no requieren contenido y son llamados elementos vacíos, los cuales tampoco llevan
-                    un tag de cierre, a continuación se muestran algunos de estos elementos:
-                </p>
-                <ul class="texto-normal">
-                    <li>
-                        El elemento <code class="w3-codespan">&lt;br&gt;</code> realiza un salto de linea, y es un elemento vacío que no requiere tag de cierre.
-                    </li>
-                    <li>
-                        El elemento <code class="w3-codespan">&lt;hr&gt;</code> inserta una línea recta, y también es un elemento vacío que no requiere tag de cierre.
-                    </li>
-                </ul>
+
+            <div class="w3-example">
+                <h3>Estos sería los elementos HTML para definir encabezados:</h3>
+                <div class="w3-code notranslate htmlHigh">
+                    &lt;h1&gt;Encabezado más importante.&lt;/h1&gt; <br>
+                    &lt;h2&gt;Encabezado menos importante 2.&lt;/h2&gt; <br>
+                    &lt;h3&gt;Encabezado menos importante 3.&lt;/h3&gt; <br>
+                    &lt;h4&gt;Encabezado menos importante 4.&lt;/h4&gt; <br>
+                    &lt;h5&gt;Encabezado menos importante 5.&lt;/h5&gt; <br>
+                    &lt;h6&gt;Encabezado menos importante 6.&lt;/h6&gt; 
+                </div>
+            </div>            
+
+            <div class="w3-example">
+                <h3>y se mostrarían así:</h3>
+                <div class="w3-white w3-padding notranslate">
+                    <h1>Encabezado más importante.</h1>
+                    <h2>Encabezado menos importante 2.</h2>
+                    <h3>Encabezado menos importante 3.</h3>
+                    <h4>Encabezado menos importante 4.</h4>
+                    <h5>Encabezado menos importante 5.</h5>
+                    <h6>Encabezado menos importante 6.</h6>
+                </div>            
             </div>
+            <hr>
+            <div>
+                <p>
+                    Aunque cada elemento de encabezado de HTML tiene su propio tamaño por default dicho tamaño se puede
+                    modificar mediante el atributo style y usando la propiedad font-size de CSS, quedaría como se muestra 
+                    a continuación: 
+                </p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;h1 style=&quot;font-size:60px;&quot;&gt;Encabezado más importante.&lt;/h1&gt;<br>
+                    </div>                    
+            </div>
+            <h1 style="font-size:60px;">Encabezado más importante.</h1>
         </div>
       </div>
     </div>
