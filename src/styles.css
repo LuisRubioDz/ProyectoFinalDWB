@@ -15,6 +15,11 @@ body{
     letter-spacing: 3px;
 }
 
+.head-normal-blanco {
+    color: whitesmoke;
+    letter-spacing: 3px;
+}
+
 .tituloabout {
     color: gray;
 }
@@ -61,4 +66,22 @@ body{
     color: lightgrey;
     font-size: 23px;
     font-family: 'Belleza';    
+}
+
+.palabraHtml {
+    font-weight: bold;
+    color: red;
+}
+
+.resaltado {
+    color:gray;
+    font-weight: bold;
+}
+
+.Nota {
+    color: crimson;
+}
+
+.html_Sample {
+    color: red;
 }

@@ -8,7 +8,22 @@
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
             <p class="texto-normal">
-                Estilos ...
+                El atributo <span class="palabraHtml"> style</span> se usa para agregar estilos a los elementos HTML, los cuales pueden ser: color, 
+                tipo de fuente, tamaño de fuente, y un muy muy largo etcétera, este atributo tiene la siguiente sintaxis:
+            </p>
+            <div class="w3-example html_Sample">
+                <div class="w3-code notranslate htmlHigh">
+                    &lt;<em>tagname</em> style=&quot;<em>property</em>:<em>value;</em>&quot;&gt;
+                </div>
+            </div>  
+            <br>              
+            <p class="texto-normal">
+                La propiedad "Property" es una propiedad de CSS (Cascade Style Sheet - Hojas de estilo en cascada). Lo especificado en "value"
+                también es un valor de CSS.
+            </p>
+            <p class="Nota">
+                Nota: Este tutorial no abarcara aspectos avanzados de CSS, ya que es otro tema bastante amplio el cual queda fuera del alcance
+                de este pequeño manual.
             </p>
         </div>
       </div>
@@ -22,12 +37,45 @@
       </h3>
       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
-
             <div class="w3-example">
-                <h3>Estos sería algunos ejemplos de estilos:</h3>
-
+                <h3>Algunos ejemplos de estilos serían los siguientes: </h3>
+                <p>
+                    <span class="resaltado">Background color:</span> esta propiedad CSS define el color de fondo ya sea de un elemnto HTML o bien de toda una página, que
+                    de hecho es también un elemento HTML, recuerde el elemento: &lt;<em>body</em>&gt; de HTML.
+                </p>
+                <br>
+                <div class="w3-code notranslate htmlHigh">
+                    &lt;body&gt;<br>&lt;h1 style=&quot;background-color:blue;&quot;&gt;Esto es un encabezado con un color de fondo diferente.&lt;/h1&gt;<br>&lt;p 
+                    style=&quot;background-color:tomato;&quot;&gt;Esto es un Párrafo con un color de fondo diferente.&lt;/p&gt;<br>&lt;/body&gt;
+                </div>
+                <br>
+                <h1 style="background-color:blue;">Esto es un encabezado con un color de fondo diferente.</h1>
+                <p style="background-color:tomato;">Esto es un Párrafo con un color de fondo diferente.</p>
+            </div>
+            <hr>
+            <p>
+                <span class="resaltado">Text Color:</span> esta propiedad CSS define el color del texto de cualquier elmento HTML.
+            </p>
+            <br>
+            <div class="w3-code notranslate htmlHigh">
+                &lt;h1 style=&quot;color:blue;&quot;&gt;Este es un encabezado con el texto color azul.&lt;/h1&gt;<br>
+                &lt;p style=&quot;color:red;&quot;&gt;Este es un párrafo con el texto color rojo.&lt;/p&gt;
             </div>            
-
+            <br>
+            <h1 style="color:blue;">Este es un encabezado con el texto color azul.</h1>
+            <p style="color:red;">Este es un párrafo con el texto color rojo.</p>
+            <hr>
+            <p>
+                <span class="resaltado">Text Size:</span> esta propiedad CSS define el tamaño del texto de cualquier elmento HTML.
+            </p>
+            <br>
+            <div class="w3-code notranslate htmlHigh">
+                &lt;h1 style=&quot;font-size:300%;&quot;&gt;Este es un encabezado con texto GRANDE.&lt;/h1&gt;<br>&lt;p 
+               style=&quot;font-size:160%;&quot;&gt;Este es un párrafo también con texto GRANDE.&lt;/p&gt;
+            </div>
+            <br>
+            <h1 style="font-size:300%;">Este es un encabezado con texto GRANDE.</h1>
+            <p style="font-size:160%;">Este es un párrafo también con texto GRANDE.</p>
         </div>
       </div>
     </div>

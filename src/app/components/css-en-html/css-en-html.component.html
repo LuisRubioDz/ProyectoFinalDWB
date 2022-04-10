@@ -8,7 +8,14 @@
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
             <p class="texto-normal">
-                Estilos ...
+                ¿ Qué es CSS ?
+            </p>
+            <p>
+              Significa Hojas de Estilo en Cascada (<span class="palabraHtml">C</span>ascade <span class="palabraHtml">S</span>tyle <span class="palabraHtml">S</span>heet) y mediante ellas se puede controlar, el color, la fuente,
+              el tamaño del texto, el espaciado entre elementos HTML, además de cómo se colocan y distribuyen dichos elementos por la pantalla y no se exagera al decir ¡Mucho Más!.
+            </p>
+            <p>
+              Uno de los mayores beneficios que otorga el uso de CSS es que ahorra muchísimo trabajo ya que se puede controlar la apariencia de múltiples páginas web, con una sola hoja de estilos.
             </p>
         </div>
       </div>
@@ -17,16 +24,104 @@
     <div class="accordion-item">
       <h3 class="accordion-header" id="flush-headingThree">
         <button class="accordion-button-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Ejemplos de CSS con HTML
+          Usando CSS
         </button>
       </h3>
       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
+          <div>
+            <h3 class="head-normal">
+                CSS se puede implementar en documentos HTML de 3 formas diferentes: 
+            </h3>
+            <ul class="texto-normal">
+                <li><span class="resaltado">Inline</span> - es cuando se usa el atributo <span class="html_Sample">style</span> dentro de los elementos HTML.
+                </li>
+                <li><span class="resaltado">Internal</span> - es cuando se usa el elemento &lt; <span class="html_Sample">style</span> &gt; en la sección &lt; <span class="html_Sample">head</span> &gt; del documento HTML.
+                </li>
+                <li><span class="resaltado">External</span> - es cuando se usa el elemento &lt; <span class="html_Sample">link</span> &gt; para vincular al documento HTML un archivo CSS externo. 
+                </li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              La forma más común de agregar estilo mediante CSS es usando archivos externos CSS. Sin embargo para fines demostrativos
+              en este tutorial veremos las primeras 2 formas (Inline e Interno).
+            </p>
+          </div>
+          <hr>
+          <h3 class="head-normal">
+            CSS InLine: 
+          </h3>
+          <div>
+            <p>
+              Al aplicar estilo de esta forma, estamos modificando un único elemento HTML, por lo que si tenemos 10 o 15 elementos
+              en una página tendremos que hacer la definición de estilo para cada uno de ellos de forma individual. Este método de 
+              agregar estilo usa el atributo <span class="html_Sample"> style</span> de los elementos HTML.
+            </p>
+            <p>
+               A continuación se muestra un ejemplo de esto:
+            </p>
+          </div>
+          <div>
+              <div class="w3-code notranslate htmlHigh">
+                &lt;h1 style=&quot;color:blue;&quot;&gt;Esto es un encabezado con formato InLine para poner el texto en Azul.&lt;/h1&gt;<br>&lt;p 
+                 style=&quot;color:red;&quot;&gt;Esto es un párrafo con formato InLine para poner el texto en rojo.&lt;/p&gt;
+               </div>
+          </div>
+          <h4 class="head-normal-blanco">
+            Lo cual es desplegado por el navegador de la siguiente manera: 
+          </h4>
+          <div>
+            <h1 style="color:blue;">Esto es un encabezado con formato InLine para poner el texto en Azul.</h1>
+            <p style="color:red;">Esto es un párrafo con formato InLine para poner el texto en rojo.</p>            
+          </div>
+          <hr>
+          <h3 class="head-normal">
+            CSS Internal: 
+          </h3>
+          <div>
+            <p>
+              El CSS interno es usado para definir estilos a una sola página HTML y este método ya representa cierto ahorro en tiempo
+              considerando los elementos que pueden ser comunes en una página. un CSS interno es definido en la sección 
+              <span class="html_Sample"> &lt;head&gt;</span> de una página HTML, dentro del elemento <span class="html_Sample">&lt;style  &gt;</span>.
+            </p>
+            <p class="texto-normal">
+              A continuación se muestra una imagen con un ejemplo de una página con CSS Internal:
+            </p>
+            <img src="../../../assets/img/SampleInternalHTML.PNG" alt="Página HTML con CSS Internal.">
+            <p class="texto-normal">
+              Y el navegador la desplegaría de la siguiente forma:
+            </p>
+            <img src="../../../assets/img/SampleInternalHTMLExec.PNG" alt="Página HTML con CSS Internal.">
+          </div>
 
-            <div class="w3-example">
-                <h3>Estos sería algunos ejemplos de estilos:</h3>
+          <hr>
+          <h3 class="head-normal">
+            CSS External: 
+          </h3>
+          <div>
+            <p>
+              El CSS externo es usado para definir estilos en muchas páginas HTML, y es con este método donde se explota 
+              too el potencial de trabajo con CSS precisamente por esta caracteristica. Para usar una hoja de estilos externa
+              (CSS External) se agrega un elemento <span class="html_Sample"> &lt;link&gt;</span> en la sección <span class="html_Sample"> &lt;head&gt;</span> de cada página HTML que se desea 
+              implementen los estilos.
+            </p>
+            <p class="texto-normal">
+              A continuación se muestra una imagen con un ejemplo de una página con CSS Externo:
+            </p>
+            <img src="../../../assets/img/SampleCSSExternal.PNG" alt="Página HTML con CSS Internal.">
+            <p class="texto-normal">
+              Considerando que el archivo CSS externo es el siguiente:
+            </p>
+            <img src="../../../assets/img/SampleCSS.PNG" alt="Página HTML con CSS Internal.">
+            <p class="texto-normal">
+              El navegador la deslegaría de la siguiente forma:
+            </p>
+            <img src="../../../assets/img/SampleHTMLCSSExtExec.PNG" alt="Página HTML con CSS Internal.">
+          </div>
 
-            </div>            
+
+      
 
         </div>
       </div>

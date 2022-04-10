@@ -1,0 +1,36 @@
+.tabla-planetas,
+.tabla-planetas th,
+.tabla-planetas td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabla-planetas {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tabla-planetas th {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
+
+.tabla-planetas td {
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-planetas tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+.tabla-planetas tbody tr:nth-child(even) {
+    background-color: #aaaaaa;
+}
+
+.img-planeta {
+    width: 400px;
+    height: 250px;  
+}

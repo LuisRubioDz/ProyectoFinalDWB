@@ -8,27 +8,164 @@
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
             <p class="texto-normal">
-                Tablas ...
+                Las tablas HTML permiten a los desarrolladores organizar los datos en renglones y columnas, y sus componentes principales son los siguientes.
             </p>
+
+            <div>
+              <h2 class="head-normal">Encabezados de Tabla (Table Headers)</h2>
+              <p>
+                Cuando se necesita que la tabla contenga encabezados se debe de usar el elemento <span class="html_Sample">&lt;th&gt;</span> en lugar del elemento <span class="html_Sample">&lt;td&gt;</span>.
+              </p>
+            </div>
+
+            <div>
+              <h2 class="head-normal">Renglones (TableRows)</h2>
+              <p>
+                Todos y cada uno de los renglones de una tabla deben iniciar con el elemento <span class="html_Sample">&lt;tr&gt;</span> y terminar con el elemento <span class="html_Sample">&lt;/tr&gt;</span>.
+              </p>
+            </div>
+
+            <div>
+              <h2 class="head-normal">Celdas (Table Cells)</h2>
+              <p>
+                Es el elemento más interno y básico de las tablas y estan definidos por <span class="html_Sample">&lt;td&gt;</span> y <span class="html_Sample">&lt;/td&gt;</span>, todo lo que esté
+                entre los elementos mencionados es contenido de la celda.
+              </p>
+              <p>
+                A continuación se muestra la estructura básica de una tabla:
+              </p>
+            </div>
+
+            <div class="w3-code notranslate htmlHigh">
+              &lt;table&gt;<br>&nbsp;
+              &lt;tr&gt;<br>&nbsp; &nbsp; &lt;th&gt;Persona 1&lt;/th&gt;<br>
+              &nbsp;&nbsp;&nbsp; &lt;th&gt;Persona 2&lt;/th&gt; <br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Persona 
+                3&lt;/th&gt;<br>
+              &nbsp;
+              &lt;/tr&gt;<br>&nbsp;
+              &lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Luis&lt;/td&gt;<br>
+              &nbsp;&nbsp;&nbsp; &lt;td&gt;Santiago&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Maricela&lt;/td&gt;<br>
+              &nbsp;
+              &lt;/tr&gt;<br>&nbsp;
+              &lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;17&lt;/td&gt;<br>
+              &nbsp;&nbsp;&nbsp; &lt;td&gt;12&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;30&lt;/td&gt;<br>
+              &nbsp;
+              &lt;/tr&gt;<br>&lt;/table&gt;
+            </div>    
+            <div>
+              <table style="width:100%;border:1px solid black;">
+                <tr>
+                  <th>Persona 1</th>
+                  <th>Persona 2</th>
+                  <th>Persona 3</th>
+                </tr>
+                <tr>
+                  <td>Luis</td>
+                  <td>Santiago</td>
+                  <td>Maricela</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>12</td>
+                  <td>30</td>
+                </tr>
+              </table>              
+            </div>        
+
+            <p>
+              Desde luego que CSS también puede ser usado para modificar y estilizar tablas HTML.
+            </p>
+            
+            <div>
+
+              <table class="tabla-planetas">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Diámetro Ecuatorial</th>
+                        <th>Temperatura Superficie</th>
+                        <th>Órbita</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mercurio</td>
+                        <td>4,880 Km</td>
+                        <td>465° C / -184° C</td>
+                        <td>58.6 días</td>
+                        <td>
+                            <img class="img-planeta" src="assets/img/img_mercurio2.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Venus</td>
+                        <td>12,104 Km</td>
+                        <td>499° C / -45° C</td>
+                        <td>224.7 días</td>
+                        <td>
+                            <img class="img-planeta" src="assets/img/img_venus.jpg">    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tierra</td>
+                        <td>12,756 Km</td>
+                        <td>56.7° C / -89.15° C</td>
+                        <td>365.25 días</td>
+                        <td>
+                            <img class="img-planeta" src="assets/img/img_tierra2.jpg">    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marte</td>
+                        <td>6,794 Km</td>
+                        <td>20° C / -87° C</td>
+                        <td>686.98 días</td>
+                        <td>
+                            <img class="img-planeta" src="assets/img/img_marte.jpg">    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jupiter</td>
+                        <td>142,984 Km</td>
+                        <td>-75° C / -163° C</td>
+                        <td>11.86 años</td>
+                        <td>
+                            <img class="img-planeta" src="assets/img/img_jupiter2.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saturno</td>
+                        <td>12,104 Km</td>
+                        <td>-73° C / -191° C</td>
+                        <td>224.7 días</td>
+                        <td>
+                            <img class="img-planeta" src="assets/img/img_saturno2.jpeg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Urano</td>
+                        <td>51,118 Km</td>
+                        <td>N/A / -214° C</td>
+                        <td>84.01 años</td>
+                        <td>
+                            <img class="img-planeta" src="assets/img/img_urano.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Neptuno</td>
+                        <td>49,532 Km</td>
+                        <td>-217° C / -223° C</td>
+                        <td>164.8 años</td>
+                        <td>
+                            <img class="img-planeta" src="assets/img/img_neptuno.jpg">
+                        </td>
+                    </tr>
+                </tbody>
+              </table>              
+            </div>
         </div>
       </div>
     </div>
 
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Ejemplos de Tablas
-        </button>
-      </h3>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">
-
-            <div class="w3-example">
-                <h3>Estos sería algunos ejemplos de Tablas:</h3>
-
-            </div>            
-
-        </div>
-      </div>
-    </div>
   </div>

@@ -2,14 +2,65 @@
     <div class="accordion-item">
       <h3 class="accordion-header" id="flush-headingOne">
         <button class="accordion-button-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Links & Imágenes
+          Links
         </button>
       </h3>
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
             <p class="texto-normal">
-                Links & Imagenes ...
+                Los links se encuentran en practicamente todas las páginas ya que son los que permiten a los usuarios ir de página
+                en página, o bien a diferentes secciones en una misma página, otra caracteristica es que cuando se pasa el mouse sobre 
+                un link el puntero cambia a una pequeña mano.
             </p>
+            <p class="texto-normal">
+              La equiqueta HTML <span class="html_Sample">&lt;a&gt;</span> define un link o hyperlink y su sintaxis es la siguiente:
+            </p> 
+            <div class="texto-normal">
+                &lt;a href=&quot;<i>url destino</i>&quot;&gt;<i>Texto de Link visible al usuario.</i> target=&quot;<i>_blank</i>&quot; &lt;/a&gt;
+            </div>
+            <p class="texto-normal">
+              El atributo más importante del tag <span class="html_Sample">&lt;a&gt;</span> es el atributo <span class="html_Sample">&lt;href&gt;</span> que es el que determina el link de destino.              
+            </p>
+            <p class="texto-normal">
+              El atributo <span class="html_Sample">&lt;target&gt;</span> especifica donde se va a abrir la página referenciada y puede tener
+              alguno de los siguientes valores:
+            </p>
+            <ul>
+              <li>
+                <span class="html_Sample">_self</span> - Default, abre la página destino en la misma ventana o pestaña donde estemos.
+              </li>
+              <li>
+                <span class="html_Sample">_blank</span> - Abre la página destino en una nueva ventana o en una nueva pestaña.
+              </li>
+              <li>
+                <span class="html_Sample">_parent</span> - Abre la página destino en el frame parent.
+              </li>
+              <li>
+                <span class="html_Sample">_top</span> - Abre la página en la seción body de la ventana donde se dio clic.
+              </li>
+            </ul>
+            <div>
+              <p class="texto-normal">
+                Por default todos los links van a aparecer de la siguiente forma en todos los navegadores:
+              </p>
+                <ul>
+                  <li class="texto_normal">
+                    Los links no visitados son mostrados subrayados y en color azul.
+                  </li>
+                  <li class="texto_normal">
+                    Los links ya visitados son mostrados subrayados y en color púrpura.
+                  </li>
+                  <li class="texto_normal">
+                    Los links activos son mostrados subrayados y en color rojo.
+                  </li>
+                </ul>
+            </div>
+            <p class="texto-normal">
+              Por supuesto que los links pueden ser formateados usando CSS.
+            </p>
+            <a class="link" href="https://www.Google.com.mx" target="_blank">Ir a Google</a> <br>
+            <a class="link" href="https://www.Youtube.com" target="_blank">Ir a Youtube</a>
+
         </div>
       </div>
     </div>
@@ -17,17 +68,62 @@
     <div class="accordion-item">
       <h3 class="accordion-header" id="flush-headingThree">
         <button class="accordion-button-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Ejemplos de Links & Imagenes
+          Imágenes
         </button>
       </h3>
       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
 
             <div class="w3-example">
-                <h3>Estos sería algunos ejemplos de estilos:</h3>
-
-            </div>            
-
+                <h3>HTML Images</h3>
+                <p>
+                  Las imágenes pueden mejorar el diseño y la apariencia de una página web. El elemento HTML <span class="html_Sample">&lt;img&gt;</span> se usa para
+                  incrustar una imagen en una página web, este elemento tiene 2 atributos requeridos:
+                </p>
+                <ul>
+                  <li class="texto_normal">
+                    <span class="html_Sample">src</span> - Especifica el path (ruta) hacia la imagen.
+                  </li>
+                  <li class="texto_normal">
+                    <span class="html_Sample">alt</span> - Especifica un texto alterno a la imagen, para los casos en que por cuaqluier razón esta no puede ser cargada.
+                  </li>
+                </ul>
+                <div class="w3-code notranslate htmlHigh">
+                  &lt;img src=&quot;<i>Path de la imagen</i>&quot; alt=&quot;<em>Texto alterno.</em>&quot;&gt;
+                </div>
+                <br>
+                <div>
+                  <h3>Siempre defina el tamaño de la imagen a mostrar.</h3>
+                  <p>
+                    Se puede usar el atributo <span class="html_Sample">style</span> para definir la altura y lo ancho de una imagen, ambos valores siempre representan pixeles.
+                    Se recomienda siempre definir estos valores para evitar que la página parpadee mientras se carga la imagen.
+                  </p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="column-1-of-2">
+                <img class="img-flex" src="/assets/img/Justice2.jpg" alt="" style="width:300px;height:250px;">
+              </div>
+              <div class="column-1-of-2">
+                <img class="img-flex" src="/assets/img/TLoZ4.jpg" alt="" style="width:300px;height:250px;">
+              </div>
+          </div>
+          <hr>
+          <br>
+          <div>
+            <h3>Imágenes que funcionan como Enlaces.</h3>
+            <p>
+              Para usar una imagen como un enlace basta con poner un elemento <span class="html_Sample">&lt;img&gt;</span> dentro de <span class="html_Sample">&lt;a&gt;</span>.
+            </p>
+            <div>
+              &lt;a href=&quot;otrapagina&quot;&gt;<br>&nbsp; &lt;img src=&quot;PathImagen&quot; alt=&quot;HTML tutorial&quot; 
+              style=&quot;width:42px;height:42px;&quot;&gt;<br>&lt;/a&gt;
+            </div>
+          </div>
+          <hr>
+          <a href="https://www.Google.com.mx" target="_blank">
+              <img src="/assets/img/imgGoogle.PNG" alt="" style="width:500px;height:200px;">
+          </a>
         </div>
       </div>
     </div>
